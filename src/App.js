@@ -16,6 +16,7 @@ import OxygenHoverEffect from './components/animation13'
 import GlassMorphismCalculator from './components/animation14'
 import RotatingCube from './components/animation15'
 import TextDistortion from './components/animation16'
+import EndlessRoad from './components/animation17'
 
 function App() {
   return (
@@ -69,6 +70,9 @@ function App() {
           </Route>
           <Route path='/animation16'>
             <TextDistortion />
+          </Route>
+          <Route path='/animation17'>
+            <EndlessRoad />
           </Route>
         </Switch>
       </Router>
