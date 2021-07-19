@@ -30,9 +30,9 @@
     height: 4px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255, 255, 155, 0.1),
-      0 0 0 8px rgba(255, 255, 155, 0.1), 0 0 20px rgba(255, 255, 155, 1);
-    animation: animate 3s linear infinite;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+      0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+    animation: animate6 3s linear infinite;
 
     &::before {
       content: '';
@@ -125,7 +125,7 @@
     transform: scale(1.2);
   }
 }
-@keyframes animate {
+@keyframes animate6 {
   0% {
     transform: rotate(315deg) translateX(0);
     opacity: 1;
