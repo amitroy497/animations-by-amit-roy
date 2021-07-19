@@ -1,0 +1,45 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  header {
+    font-size: 40px;
+    position: fixed;
+    top: 30px;
+    font-weight: bold;
+  }
+
+  .next {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+
+    &::before {
+      content: '>';
+      color: #fff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+
+  .prev {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: red;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+
+    &::before {
+      content: '<';
+      color: #fff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+}

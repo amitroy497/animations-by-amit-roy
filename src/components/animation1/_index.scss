@@ -1,0 +1,54 @@
+.shineButtonWrapper {
+  background: #000;
+  height: 100vh;
+  font-family: poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  header {
+    color: #fff;
+  }
+
+  .shineButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(
+      to right,
+      #4d4d4d 0,
+      #00ffff 10%,
+      #00ffff 20%,
+      #4d4d4d 30%
+    );
+    background-position: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-size-adjust: none;
+    font-size: 40px;
+    font-weight: 600;
+    border: none;
+    white-space: nowrap;
+    animation: swipe 3s infinite linear;
+    animation-fill-mode: forwards;
+
+    @keyframes swipe {
+      0% {
+        background-position: 0;
+      }
+      60% {
+        background-position: 200px;
+      }
+      100% {
+        background-position: 400px;
+      }
+    }
+  }
+}
