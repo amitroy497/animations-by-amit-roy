@@ -17,6 +17,7 @@ import GlassMorphismCalculator from './components/animation14'
 import RotatingCube from './components/animation15'
 import TextDistortion from './components/animation16'
 import EndlessRoad from './components/animation17'
+import LamborginiMovingJumping from './components/animation18'
 
 function App() {
   return (
@@ -73,6 +74,9 @@ function App() {
           </Route>
           <Route path='/animation17'>
             <EndlessRoad />
+          </Route>
+          <Route path='/animation18'>
+            <LamborginiMovingJumping />
           </Route>
         </Switch>
       </Router>

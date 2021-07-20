@@ -14,8 +14,8 @@ const EndlessRoad = () => {
           <div className='square'></div>
         </div>
       </section>
-      <Link className='prev' to='/animation15' title='Prev' />
-      <Link className='next' to='/animation17' title='Next' />
+      <Link className='prev' to='/animation16' title='Prev' />
+      <Link className='next' to='/animation18' title='Next' />
     </article>
   )
 }
