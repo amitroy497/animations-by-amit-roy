@@ -18,6 +18,7 @@ import RotatingCube from './components/animation15'
 import TextDistortion from './components/animation16'
 import EndlessRoad from './components/animation17'
 import LamborginiMovingJumping from './components/animation18'
+import WaterWaveText from './components/animation19'
 
 function App() {
   return (
@@ -77,6 +78,9 @@ function App() {
           </Route>
           <Route path='/animation18'>
             <LamborginiMovingJumping />
+          </Route>
+          <Route path='/animation19'>
+            <WaterWaveText />
           </Route>
         </Switch>
       </Router>
