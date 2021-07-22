@@ -1,23 +1,32 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './_index.scss'
 import { Link } from 'react-router-dom'
 import splitVideo from '../../assets/videos/splitVideo.mp4'
 
 const SplitVideo = () => {
-  window.addEventListener('scroll', function () {
-    let side1 = document.getElementById('side1')
-    let side2 = document.getElementById('side2')
+  const sideRef1 = useRef()
+  const sideRef2 = useRef()
 
-    side1.style.left = -window.pageYOffset + 'px'
-    side2.style.left = window.pageYOffset + 'px'
-  })
+  const handleScroll = () => {
+    sideRef1.current.style.left = -window.pageYOffset + 'px'
+    sideRef2.current.style.left = window.pageYOffset + 'px'
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <article className='splitVideoWrapper' id='scrollArticle'>
       <section>
-        <div className='side' id='side1'>
+        <div className='side' id='side1' ref={sideRef1}>
           <video src={splitVideo} type='video/mp4' autoPlay loop muted />
         </div>
-        <div className='side' id='side2'>
+        <div className='side' id='side2' ref={sideRef2}>
           <video src={splitVideo} type='video/mp4' autoPlay loop muted />
         </div>
       </section>
