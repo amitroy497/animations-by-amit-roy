@@ -1,0 +1,47 @@
+.animatedCircleMouseOverTextEffectWrapper {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+
+  header {
+    color: #fff;
+  }
+
+  section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+
+    h2 {
+      position: absolute;
+      color: #fff;
+      font-size: 1.5em;
+      user-select: none;
+      pointer-events: none;
+      animation: animate21 7.5s linear infinite;
+
+      span {
+        display: inline-block;
+        position: absolute;
+        text-transform: uppercase;
+        transform-origin: 0 100px;
+        top: -100px;
+      }
+    }
+  }
+}
+@keyframes animate21 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -20,6 +20,7 @@ import EndlessRoad from './components/animation17'
 import LamborginiMovingJumping from './components/animation18'
 import WaterWaveText from './components/animation19'
 import GooeyEffect from './components/animation20'
+import AnimatedCircleMouseoverTextEffect from './components/animation21'
 
 function App() {
   return (
@@ -85,6 +86,9 @@ function App() {
           </Route>
           <Route path='/animation20'>
             <GooeyEffect />
+          </Route>
+          <Route path='/animation21'>
+            <AnimatedCircleMouseoverTextEffect />
           </Route>
         </Switch>
       </Router>
