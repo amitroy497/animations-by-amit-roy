@@ -5,10 +5,6 @@
   min-height: 100vh;
   animation: changeBgColor23 4s steps(1) infinite;
 
-  header {
-    color: #fff;
-  }
-
   section {
     position: relative;
     width: 50px;
@@ -97,17 +93,22 @@
 @keyframes changeBgColor23 {
   0% {
     background: #ff0;
+    color: #000;
   }
   25% {
     background: #0f0;
+    color: #fff;
   }
   50% {
     background: #ff4786;
+    color: #fff;
   }
   75% {
     background: #2da2ff;
+    color: #fff;
   }
   100% {
     background: #ff0;
+    color: #000;
   }
 }
