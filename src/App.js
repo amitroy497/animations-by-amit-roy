@@ -22,6 +22,7 @@ import WaterWaveText from './components/animation19'
 import GooeyEffect from './components/animation20'
 import AnimatedCircleMouseoverTextEffect from './components/animation21'
 import HotTeaCup from './components/animation22'
+import ColorfulRotatingSquares from './components/animation23'
 
 function App() {
   return (
@@ -93,6 +94,9 @@ function App() {
           </Route>
           <Route path='/animation22'>
             <HotTeaCup />
+          </Route>
+          <Route path='/animation23'>
+            <ColorfulRotatingSquares />
           </Route>
         </Switch>
       </Router>
